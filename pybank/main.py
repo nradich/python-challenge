@@ -4,6 +4,7 @@ import csv
 csvpath= os.path.join('budgetdata.csv',)
 
 month =[]
+total = []
 
 with open ('budgetdata.csv' , newline= '') as csvfile:
     csvreader = csv.reader(csvfile, delimiter = ',')
@@ -14,6 +15,7 @@ with open ('budgetdata.csv' , newline= '') as csvfile:
     #counting the number of months
     for row in csvreader:
         month.append(row[0])
+        total.append(int(row[1]))
     def number_of_months():
         """Generates the number of rows in the CSV file"""
         return(len(month))
@@ -22,3 +24,5 @@ with open ('budgetdata.csv' , newline= '') as csvfile:
     #  #x=month
 print(number_of_months())
 """86"""
+print(sum(total))
+"""Second column added up"
