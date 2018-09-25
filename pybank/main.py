@@ -11,10 +11,14 @@ with open ('budgetdata.csv' , newline= '') as csvfile:
 
  #row 2 is month   
 #row 1 is numbers
-    counter = 0
+    #counting the number of months
     for row in csvreader:
-        month.append(int(row[0])
-        
-    def add_month(x):
-        return sum(x)
-    x = month
+        month.append(row[0])
+    def number_of_months():
+        """Generates the number of rows in the CSV file"""
+        return(len(month))
+      
+         #def add_month(x):#return sum(x
+    #  #x=month
+print(number_of_months())
+"""86"""
