@@ -32,6 +32,8 @@ def avgmonth ():
     return sum(difference)/len(difference)
 
 print(avgmonth())
+print(max(difference))
+print(min(difference))
 
     #def avgmonth ():
        # """Calculating the average change per month"""
